@@ -11,8 +11,6 @@ if user_ivent == '+':
     result = num1 + num2
 elif user_ivent == '-':
     result = num1 - num2
-elif user_ivent == '-':
-    result = num1 - num2
 elif user_ivent == '*':
     result = num1 * num2
 elif user_ivent == '/' or user_ivent == '%' or user_ivent == '//':
