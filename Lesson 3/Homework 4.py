@@ -13,7 +13,7 @@ elif user_ivent == '-':
     result = num1 - num2
 elif user_ivent == '*':
     result = num1 * num2
-elif user_ivent == '/' or user_ivent == '%' or user_ivent == '//':
+elif user_ivent in ['/', '%', '//']:
     if num2:
         if user_ivent == '/':
             result = num1 / num2
@@ -22,11 +22,8 @@ elif user_ivent == '/' or user_ivent == '%' or user_ivent == '//':
         else:
             result = num1 // num2
     else:
-        print("На ноль делить нельзя")
+        result = "На ноль делить нельзя"
 else:
     print("Вы ввели неверную команду :(")
 
-#если остаток нулевой - число целое, для красоты вывода, без запятой
-if not result % 1:
-    result = int(result)
 print(result)
