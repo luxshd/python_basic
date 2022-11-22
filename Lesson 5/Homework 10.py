@@ -35,5 +35,3 @@ while True:
             break
     break
 print(result)
-фывф = "фыв"
-print(фывф)
