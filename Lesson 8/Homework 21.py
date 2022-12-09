@@ -9,7 +9,7 @@ def is_palindrome(text):
     for p in punctuations:
         if p in text:
             text = text.replace(p, '')
-    if text[:len(text) // 2] in text[:len(text) // 2:-1] or len(text) == 1:
+    if text == text[::-1]:
         return True
     else:
         return False
