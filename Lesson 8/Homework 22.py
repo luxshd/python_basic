@@ -1,6 +1,5 @@
 # Нахождение уникального числа
 def find_unique_value(arr):
-    uniq = arr[0]
     for i in arr:
         if arr.count(i) == 1:
             return i
