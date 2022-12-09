@@ -9,17 +9,10 @@ def is_palindrome(text):
     for p in punctuations:
         if p in text:
             text = text.replace(p, '')
-    if len(text) == 1:
+    if text[:len(text) // 2] in text[:len(text) // 2:-1] or len(text) == 1:
         return True
-    # Если длина строки нечётная - удаляю средний символ
-    if len(text) % 10 != 0:
-        text = text.replace(text[len(text) // 2], '')
-    # С помощью среза до и после середины строки сравниваю множества на симметричную разницу, и, если она есть, то строки не равны,
-    # т.е. это НЕ полиндром.
-    if set(text[:(len(text) // 2)]).symmetric_difference(set(text[(len(text) // 2):])):
-        return False
     else:
-        return True
+        return False
 
 
 print(is_palindrome('A man, a plan, a canal: Panama'))
