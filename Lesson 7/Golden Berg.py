@@ -7,7 +7,7 @@ berg = [
     [1, 3, 5, 6],
     [6, 2, 4, 4, 5],
     [9, 5, 3, 5, 5, 7],
-    [7, 4, 6, 4, 7, 6, 8]
+    [7, 4, 6, 14, 7, 6, 8]
 ]
 
 
@@ -51,4 +51,4 @@ while i < 7:
     # print(total)
     # print(berg)
     i += 1
-    print('total: ', total)
+    print(sum(total))
