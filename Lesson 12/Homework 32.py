@@ -1,5 +1,4 @@
 class Item:
-
     def __init__(self, name: str, price: float, description: str, screen_diag: float):
         self.name = name
         self.price = price
