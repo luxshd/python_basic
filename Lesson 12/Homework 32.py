@@ -60,4 +60,4 @@ cart = Purchase(buyer)
 cart.add_item(hp17, 5)
 cart.add_item(air_m1, 6)
 print(cart)
-print(cart.get_total())  # 60
+print(cart.get_total())
