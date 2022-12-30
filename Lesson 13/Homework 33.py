@@ -28,7 +28,7 @@ class Group:
 
     def delete_student(self, last_name):
         res = self.find_student(last_name)
-        self.group.remove(res)
+        self.group.discard(res)
 
     def find_student(self, last_name):
         for student in self.group:
@@ -64,5 +64,6 @@ print()
 
 print('Delete students')
 gr.delete_student('Taylor')
+gr.delete_student('Jobs')
 gr.delete_student('Jobs')
 print(gr)  # Only one student
